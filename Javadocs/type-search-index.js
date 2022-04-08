@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"Car"},{"p":"<Unnamed>","l":"CarStatus"},{"p":"<Unnamed>","l":"Debug"},{"p":"<Unnamed>","l":"MainPanel"},{"p":"<Unnamed>","l":"MainPanel.CarsContainer"},{"p":"<Unnamed>","l":"MainPanel.StoplightContainer"},{"p":"<Unnamed>","l":"Project3Main"},{"p":"<Unnamed>","l":"Stoplight"},{"p":"<Unnamed>","l":"TrafficLightColor"}]

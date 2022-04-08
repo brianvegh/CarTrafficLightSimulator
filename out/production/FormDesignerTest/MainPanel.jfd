@@ -1,0 +1,735 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 1000, 1000 )
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 4
+			}
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "toolBar1"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane2"
+				"resizeWeight": 1.0
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel7"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						"horizontalScrollBarPolicy": 32
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+							name: "splitPane3"
+							"orientation": 0
+							"resizeWeight": 1.0
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 1
+							} ) {
+								name: "panel2"
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "Car3"
+									"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+									"preferredSize": &Dimension0 new java.awt.Dimension( 100, 82 )
+									"minimumSize": &Dimension1 new java.awt.Dimension( 300, 82 )
+									"maximumSize": new java.awt.Dimension( 2147483647, 82 )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+										"$layoutConstraints": "insets 10 10 10 18,hidemode 3"
+										"$columnConstraints": "[fill]0[42,fill]0[53,fill]0[fill]0[fill]0[98,fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[34,fill]0[313,fill]0[fill]"
+										"$rowConstraints": "[][][]"
+									} ) {
+										name: "panel9"
+										"preferredSize": &Dimension2 new java.awt.Dimension( 100, 80 )
+										"minimumSize": &Dimension3 new java.awt.Dimension( 300, 82 )
+										auxiliary() {
+											"JavaCodeGenerator.variableModifiers": 4
+										}
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label7"
+											"text": "Car # :"
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField5"
+											"columns": 10
+											"minimumSize": &Dimension4 new java.awt.Dimension( 20, 28 )
+											"maximumSize": &Dimension5 new java.awt.Dimension( 20, 2147483647 )
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 0"
+										} )
+										add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+											name: "hSpacer8"
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 2 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label10"
+											"text": "X Position:"
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 3 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField7"
+											"columns": 20
+											"text": "pos"
+											"focusable": false
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 4 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label8"
+											"text": "Status: "
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 5 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField6"
+											"columns": 25
+											"text": "Driving @ X mph"
+											"focusable": false
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 6 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label9"
+											"text": "Speed: "
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 12 0"
+										} )
+										add( new FormComponent( "javax.swing.JSpinner" ) {
+											name: "spinner3"
+											"model": &SpinnerNumberModel0 new javax.swing.SpinnerNumberModel {
+												stepSize: 5
+												value: 15
+											}
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 13 0"
+										} )
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button7"
+											"text": "Pull Over / Drive"
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 14 0"
+										} )
+										add( new FormComponent( "javax.swing.JProgressBar" ) {
+											name: "progressBar3"
+											"minimumSize": &Dimension6 new java.awt.Dimension( 10, 25 )
+											"value": 15
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 1 16 1"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "Car4"
+									"border": #LineBorder0
+									"preferredSize": #Dimension0
+									"minimumSize": #Dimension1
+									"maximumSize": new java.awt.Dimension( 2147483647, 82 )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+										"$layoutConstraints": "insets 10 10 10 18,hidemode 3"
+										"$columnConstraints": "[fill]0[42,fill]0[53,fill]0[fill]0[fill]0[98,fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[34,fill]0[313,fill]0[fill]"
+										"$rowConstraints": "[][][]"
+									} ) {
+										name: "panel10"
+										"preferredSize": #Dimension2
+										"minimumSize": #Dimension3
+										auxiliary() {
+											"JavaCodeGenerator.variableModifiers": 4
+										}
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label11"
+											"text": "Car # :"
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField8"
+											"columns": 10
+											"minimumSize": #Dimension4
+											"maximumSize": #Dimension5
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label12"
+											"text": "X Position:"
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 3 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField9"
+											"columns": 20
+											"text": "pos"
+											"focusable": false
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 4 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label13"
+											"text": "Status: "
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 5 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField10"
+											"columns": 25
+											"text": "Driving @ X mph"
+											"focusable": false
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 6 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label14"
+											"text": "Speed: "
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 12 0"
+										} )
+										add( new FormComponent( "javax.swing.JSpinner" ) {
+											name: "spinner4"
+											"model": #SpinnerNumberModel0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 13 0"
+										} )
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button8"
+											"text": "Pull Over / Drive"
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 14 0"
+										} )
+										add( new FormComponent( "javax.swing.JProgressBar" ) {
+											name: "progressBar4"
+											"minimumSize": #Dimension6
+											"value": 15
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 1 16 1"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "Car5"
+									"border": #LineBorder0
+									"preferredSize": #Dimension0
+									"minimumSize": #Dimension1
+									"maximumSize": new java.awt.Dimension( 2147483647, 82 )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+										"$layoutConstraints": "insets 10 10 10 18,hidemode 3"
+										"$columnConstraints": "[fill]0[42,fill]0[53,fill]0[fill]0[fill]0[98,fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[fill]0[34,fill]0[313,fill]0[fill]"
+										"$rowConstraints": "[][][]"
+									} ) {
+										name: "panel11"
+										"preferredSize": #Dimension2
+										"minimumSize": #Dimension3
+										auxiliary() {
+											"JavaCodeGenerator.variableModifiers": 4
+										}
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label15"
+											"text": "Car # :"
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField11"
+											"columns": 10
+											"minimumSize": #Dimension4
+											"maximumSize": #Dimension5
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label16"
+											"text": "X Position:"
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 3 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField12"
+											"columns": 20
+											"text": "pos"
+											"focusable": false
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 4 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label17"
+											"text": "Status: "
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 5 0"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "textField13"
+											"columns": 25
+											"text": "Driving @ X mph"
+											"focusable": false
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 6 0"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label18"
+											"text": "Speed: "
+											"horizontalAlignment": 0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 12 0"
+										} )
+										add( new FormComponent( "javax.swing.JSpinner" ) {
+											name: "spinner5"
+											"model": #SpinnerNumberModel0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 13 0"
+										} )
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button9"
+											"text": "Pull Over / Drive"
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 14 0"
+										} )
+										add( new FormComponent( "javax.swing.JProgressBar" ) {
+											name: "progressBar5"
+											"minimumSize": #Dimension6
+											"value": 15
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 0 1 16 1"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								} )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "left"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+								"$layoutConstraints": "insets 10,hidemode 3"
+								"$columnConstraints": "[grow,fill]"
+								"$rowConstraints": "[grow,fill]"
+							} ) {
+								name: "panel3"
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+									name: "panel4"
+									"minimumSize": new java.awt.Dimension( 610, 460 )
+									"maximumSize": new java.awt.Dimension( 50000, 460 )
+									"preferredSize": new java.awt.Dimension( 610, 460 )
+									"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+										"$layoutConstraints": "hidemode 3,alignx center"
+										"$columnConstraints": "[0,fill]0[206,fill]"
+										"$rowConstraints": "[42][]0"
+									} ) {
+										name: "Stoplight2"
+										"border": &LineBorder1 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+										"minimumSize": &Dimension7 new java.awt.Dimension( 200, 460 )
+										"maximumSize": &Dimension8 new java.awt.Dimension( 200, 460 )
+										"preferredSize": &Dimension9 new java.awt.Dimension( 200, 460 )
+										auxiliary() {
+											"JavaCodeGenerator.variableModifiers": 4
+										}
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+											"rows": 2
+										} ) {
+											name: "infoPanel2"
+											"border": #LineBorder1
+											add( new FormComponent( "javax.swing.JLabel" ) {
+												name: "l3"
+												"text": "Light Number:"
+												"preferredSize": &Dimension10 new java.awt.Dimension( 30, 13 )
+												"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+												"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JTextField" ) {
+												name: "lightNumberTF2"
+												"columns": 2
+												"text": "filler"
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JLabel" ) {
+												name: "l4"
+												"text": "Status:"
+												"preferredSize": &Dimension11 new java.awt.Dimension( 30, 13 )
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JTextField" ) {
+												name: "lightStatusTF2"
+												"columns": 8
+												"text": "filler"
+												"horizontalAlignment": 0
+											} )
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 1 0"
+										} )
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+											name: "lightImagePanel2"
+											"minimumSize": &Dimension12 new java.awt.Dimension( 129, 377 )
+											"maximumSize": &Dimension13 new java.awt.Dimension( 129, 377 )
+											"border": &SoftBevelBorder0 new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 1 1,align center center,grow 0 0"
+										} )
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+										"$layoutConstraints": "hidemode 3,alignx center"
+										"$columnConstraints": "[0,fill]0[206,fill]"
+										"$rowConstraints": "[42][]0"
+									} ) {
+										name: "Stoplight3"
+										"border": #LineBorder1
+										"minimumSize": #Dimension7
+										"maximumSize": #Dimension8
+										"preferredSize": #Dimension9
+										auxiliary() {
+											"JavaCodeGenerator.variableModifiers": 4
+										}
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+											"rows": 2
+										} ) {
+											name: "infoPanel3"
+											"border": #LineBorder1
+											add( new FormComponent( "javax.swing.JLabel" ) {
+												name: "l5"
+												"text": "Light Number:"
+												"preferredSize": #Dimension10
+												"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+												"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JTextField" ) {
+												name: "lightNumberTF3"
+												"columns": 2
+												"text": "filler"
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JLabel" ) {
+												name: "l6"
+												"text": "Status:"
+												"preferredSize": #Dimension11
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JTextField" ) {
+												name: "lightStatusTF3"
+												"columns": 8
+												"text": "filler"
+												"horizontalAlignment": 0
+											} )
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 1 0"
+										} )
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+											name: "lightImagePanel3"
+											"minimumSize": #Dimension12
+											"maximumSize": #Dimension13
+											"border": #SoftBevelBorder0
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 1 1,align center center,grow 0 0"
+										} )
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+										"$layoutConstraints": "hidemode 3,alignx center"
+										"$columnConstraints": "[0,fill]0[206,fill]"
+										"$rowConstraints": "[42][]0"
+									} ) {
+										name: "Stoplight"
+										"border": #LineBorder1
+										"minimumSize": #Dimension7
+										"maximumSize": #Dimension8
+										"preferredSize": #Dimension9
+										auxiliary() {
+											"JavaCodeGenerator.variableModifiers": 4
+										}
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+											"rows": 2
+										} ) {
+											name: "infoPanel"
+											"border": #LineBorder1
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+											add( new FormComponent( "javax.swing.JLabel" ) {
+												name: "l1"
+												"text": "Light Number:"
+												"preferredSize": #Dimension10
+												"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+												"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JTextField" ) {
+												name: "lightNumberTF"
+												"columns": 2
+												"text": "filler"
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JLabel" ) {
+												name: "l2"
+												"text": "Status:"
+												"preferredSize": #Dimension11
+												"horizontalAlignment": 0
+											} )
+											add( new FormComponent( "javax.swing.JTextField" ) {
+												name: "lightStatusTF"
+												"columns": 8
+												"text": "filler"
+												"horizontalAlignment": 0
+											} )
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 1 0"
+										} )
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+											name: "lightImagePanel"
+											"minimumSize": #Dimension12
+											"maximumSize": #Dimension13
+											"border": #SoftBevelBorder0
+											auxiliary() {
+												"JavaCodeGenerator.variableModifiers": 4
+											}
+										}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+											"value": "cell 1 1,align center center,grow 0 0"
+										} )
+									} )
+								}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+									"value": "cell 0 0"
+								} )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "right"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets 05 5 5 5,hidemode 3"
+					"$columnConstraints": "[150,grow,fill]"
+					"$rowConstraints": "[grow,fill]"
+				} ) {
+					name: "panel8"
+					"minimumSize": new java.awt.Dimension( 120, 181 )
+					"preferredSize": new java.awt.Dimension( 80, 181 )
+					"maximumSize": new java.awt.Dimension( 120, 2147483647 )
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"rows": 8
+						"hgap": 4
+						"vgap": 4
+					} ) {
+						name: "panel6"
+						"minimumSize": new java.awt.Dimension( 100, 196 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer1"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button2"
+							"text": "Add Car"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer2"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button3"
+							"text": "Start Lights"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button1"
+							"text": "Pause Lights"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer3"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button5"
+							"text": "Add Intersection"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer4"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 25 )
+			"size": new java.awt.Dimension( 1385, 795 )
+		} )
+	}
+}

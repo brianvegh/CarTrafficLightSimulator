@@ -1,0 +1,217 @@
+import java.awt.*;
+import java.net.MalformedURLException;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Random;
+import javax.swing.*;
+import javax.swing.border.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+import net.miginfocom.swing.*;
+/*
+ * Created by JFormDesigner on Sat Dec 12 22:42:28 EST 2020
+ */
+
+
+
+/**
+ * @author unknown
+ */
+public class Stoplight extends JPanel implements Runnable, ChangeListener {
+    final static JPanel[] images = new JPanel[4];
+    private ImageIcon icon;
+
+    final int lightNumber;
+    private TrafficLightColor color;//holds current color
+    private boolean stop = false; // set to true to stop the simulation
+    private boolean changed = false; // true when the light has changed
+
+    public Stoplight(int lightNumber) {
+        initComponents();
+        getPictures();
+        this.lightNumber = lightNumber;
+        lightNumberTF.setText(String.valueOf(lightNumber));
+        color = TrafficLightColor.NONE;
+        updatePanel(color);
+    }
+
+    /**
+     * Updates the picture to the elected image
+     */
+    protected void getPictures() {
+        String[] filenames={"red.jpg","yellow.jpg","green.jpg", "all.jpg"};
+        for (int i=0;i<4;i++) {
+            String path = "src/res/" + filenames[i];
+            JPanel jPanel = new JPanel();
+            JLabel picture = new JLabel();
+            ImageIcon icon;
+            java.net.URL imgURL = null;
+            try {
+                imgURL = Paths.get(path).toUri().toURL();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            icon = new ImageIcon(imgURL);
+            picture.setIcon(icon);
+            jPanel.add(picture);
+            images[i]=jPanel;
+        }
+    }
+
+    // Start up the light.
+    @Override
+    public void run() {
+        while(!stop) {
+            try {
+                switch(color) {
+                    case GREEN:
+                        Thread.sleep(10000); // green for 10 seconds
+                        break;
+                    case YELLOW:
+                        Thread.sleep(5000);  // yellow for 2 seconds
+                        break;
+                    case RED:
+                        Thread.sleep(12000); // red for 12 seconds
+                        break;
+                    case NONE:
+                        changeColor();
+                }
+            } catch(InterruptedException exc) {
+                System.out.println(exc);
+            }
+            changeColor();
+        }
+    }
+    // Change color.
+    synchronized void changeColor() {
+        switch(color) {
+            case RED:
+                color = TrafficLightColor.GREEN;
+                updatePanel(color);
+                break;
+            case YELLOW:
+                color = TrafficLightColor.RED;
+                updatePanel(color);
+                break;
+            case GREEN:
+            case NONE:
+                color = TrafficLightColor.YELLOW;
+                updatePanel(color);
+        }
+        changed = true;
+        notify(); // signal that the light has changed
+    }
+
+    private void updatePanel(TrafficLightColor color) {
+        lightImagePanel.removeAll();
+        lightImagePanel.add(images[color.ordinal()]);
+        lightImagePanel.updateUI();
+        lightStatusTF.setText(color.toString());
+    }
+
+    // Wait until a light change occurs.
+    synchronized void waitForChange() {
+        try {
+            while(!changed)
+                wait(); // wait for light to change
+            changed = false;
+        } catch(InterruptedException exc) {
+            System.out.println(exc);
+        }
+    }
+    // Return current color.
+    synchronized String getColor() {
+        return color.name();
+    }
+
+    // Stop the traffic light.
+    synchronized void cancel() {
+        stop = true;
+    }
+
+
+    @Override
+    public void stateChanged(ChangeEvent e) {
+
+    }
+    private void initComponents() {
+        // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+        infoPanel = new JPanel();
+        l1 = new JLabel();
+        lightNumberTF = new JTextField();
+        l2 = new JLabel();
+        lightStatusTF = new JTextField();
+        lightImagePanel = new JPanel();
+
+        //======== this ========
+        setBorder(LineBorder.createBlackLineBorder());
+        setMinimumSize(new Dimension(200, 460));
+        setMaximumSize(new Dimension(200, 460));
+        setPreferredSize(new Dimension(200, 460));
+        setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border
+        . EmptyBorder( 0, 0, 0, 0) , "JFor\u006dDesi\u0067ner \u0045valu\u0061tion", javax. swing. border. TitledBorder. CENTER, javax
+        . swing. border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,
+        12 ), java. awt. Color. red) , getBorder( )) );  addPropertyChangeListener (new java. beans
+        . PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("bord\u0065r" .equals (e .
+        getPropertyName () )) throw new RuntimeException( ); }} );
+        setLayout(new MigLayout(
+            "hidemode 3,alignx center",
+            // columns
+            "[0,fill]0" +
+            "[206,fill]",
+            // rows
+            "[42]" +
+            "[]0"));
+
+        //======== infoPanel ========
+        {
+            infoPanel.setBorder(LineBorder.createBlackLineBorder());
+            infoPanel.setLayout(new GridLayout(2, 0));
+
+            //---- l1 ----
+            l1.setText("Light Number:");
+            l1.setPreferredSize(new Dimension(30, 13));
+            l1.setHorizontalAlignment(SwingConstants.CENTER);
+            l1.setMaximumSize(null);
+            l1.setMinimumSize(null);
+            infoPanel.add(l1);
+
+            //---- lightNumberTF ----
+            lightNumberTF.setColumns(2);
+            lightNumberTF.setHorizontalAlignment(SwingConstants.CENTER);
+            infoPanel.add(lightNumberTF);
+
+            //---- l2 ----
+            l2.setText("Status:");
+            l2.setPreferredSize(new Dimension(30, 13));
+            l2.setHorizontalAlignment(SwingConstants.CENTER);
+            infoPanel.add(l2);
+
+            //---- lightStatusTF ----
+            lightStatusTF.setColumns(8);
+            lightStatusTF.setHorizontalAlignment(SwingConstants.CENTER);
+            infoPanel.add(lightStatusTF);
+        }
+        add(infoPanel, "cell 1 0");
+
+        //======== lightImagePanel ========
+        {
+            lightImagePanel.setMinimumSize(new Dimension(129, 377));
+            lightImagePanel.setMaximumSize(new Dimension(129, 377));
+            lightImagePanel.setBorder(new SoftBevelBorder(SoftBevelBorder.LOWERED));
+            lightImagePanel.setLayout(new BorderLayout());
+        }
+        add(lightImagePanel, "cell 1 1,align center center,grow 0 0");
+        // JFormDesigner - End of component initialization  //GEN-END:initComponents
+    }
+
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    private JPanel infoPanel;
+    private JLabel l1;
+    private JTextField lightNumberTF;
+    private JLabel l2;
+    private JTextField lightStatusTF;
+    private JPanel lightImagePanel;
+    // JFormDesigner - End of variables declaration  //GEN-END:variables
+}
