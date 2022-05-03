@@ -18,21 +18,21 @@ Clone this Git Repo and run 'Run CarTrafficLightSimulator.bat". The included bat
 
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/c2.png">
 
-Car Added:
+#### Car Added:
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/carAdded.png">
 
-Light Added:
+#### Light Added:
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/lightAdded.png">
 
-Cars Pulled Over:
+#### Cars Pulled Over:
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/pulledOver.png">
 
-Cars Speed:
+#### Cars Speed:
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/speed.png">
 
-Resume Cars:
+#### Resume Cars:
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/resumeCars.png">
 
-Resume Lights
+#### Resume Lights
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/resumeLights.png">
 
