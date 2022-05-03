@@ -12,6 +12,8 @@ Clone this Git Repo and run 'Run CarTrafficLightSimulator.bat". The included bat
 
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/ProgramExecutionviaBatchFile.png">
 
+
+
 ## Program Images:
 
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/c3.png">
