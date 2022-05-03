@@ -7,8 +7,8 @@ Fully graphical Java Swing application that uses event handlers, listeners and i
 
 Additionaly, vehicles have user-adjustable speeds; stoplights are able to be paused and resumed.
 
-To Run:
-Clone this Git Repo and run 'Run CarTrafficLightSimulator.bat". The included batch file will open the program's Javadoc documentation in your default web browser, as well as execute the Run CarTrafficLightSimulator.jar program file.
+#### To Run:
+ Clone this Git Repo and run 'Run CarTrafficLightSimulator.bat". The included batch file will open the program's Javadoc documentation in your default web browser, as well as execute the Run CarTrafficLightSimulator.jar program file.
 
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/ProgramExecutionviaBatchFile.png">
 
