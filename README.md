@@ -13,6 +13,11 @@ Additionaly, vehicles have user-adjustable speeds; stoplights are able to be pau
 <img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/ProgramExecutionviaBatchFile.png">
 
 
+## Class Diagram:
+
+<img src="https://github.com/brianvegh/CarTrafficLightSimulator/blob/main/images/UMLDiagram.png">
+
+
 
 ## Program Images:
 
